@@ -21,6 +21,6 @@ app.use((req, res, next) => {
 
 app.listen(port, () => {
     if (process.env.NODE_ENV === "development") {
-        console.log(`Listen port ${port} for Development`)
+        console.log(`Listen port ${port} for ${process.env.NODE_ENV}`)
     }
 })
