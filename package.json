@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon --exec babel-node -r node_modules/dotenv/config src/server.js --presets @babel/preset-env"
+    "start": "nodemon --exec babel-node -r node_modules/dotenv/config src/server.js"
   },
   "keywords": [],
   "author": "infinityc2",
