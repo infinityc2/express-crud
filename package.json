@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "babel-node src/server.js --presets @babel/preset-env"
+    "start": "nodemon --exec babel-node -r node_modules/dotenv/config src/server.js --presets @babel/preset-env"
   },
   "keywords": [],
   "author": "infinityc2",
@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.7.7"
   }

@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-mongoose.connect(`mongodb://localhost:27017/server-api`, { useNewUrlParser: true })
+mongoose.connect(process.env.DATABASE, { useNewUrlParser: true })
 
 mongoose.connection.on('connected', () => {
     console.log("database on connected")
